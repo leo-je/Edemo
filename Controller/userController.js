@@ -8,9 +8,20 @@ function userController(){
 		path:'/user',
 		func:function(req,res){
 			res.type('text/plain');
-			userService.getUser(req,res);
+			//userService.getUser(req,res);
+			userService.test(res);
 		}
 	};
+	
+	
+	p.push({
+			m:'get',
+			path:'/user2',
+			func:function(req,res){
+				res.type('text/plain');
+				userService.test(res);
+			}
+		});
 
 	return {Cname:Cname,p:p};
 }
