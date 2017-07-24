@@ -20,9 +20,11 @@ UserService.test = async function(res){
 		d = v;
 		return v;
 	});*/
-	var s = await userDao.getUser3();//await userDao.exeQuery();
+	var s = await userDao.getUser();//await userDao.exeQuery();
 	console.log('s:'.green+JSON.stringify(s).green);
-	res.send('d:'+JSON.stringify(s));
+	res.send({
+		users:s
+	});
 }
 
  var ss = function (res){
