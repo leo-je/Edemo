@@ -32,7 +32,7 @@ var exeQuery = async function (sql){
 		console.log('Error:'.red+JSON.stringify(e));
 		 console.log("exeQuery has a Error: ".red + e.message);
 		 return null;
-	});;
+	});
 	return data;
 }
 module.exports=exeQuery;

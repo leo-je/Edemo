@@ -4,7 +4,8 @@ var CreateController = require('./CreateController');
 function controller(app){
 	var Controller = [];
 	var _app = app;
-	var path = '.'+'\\'+'Controller';
+	//var path = '.'+'\\'+'Controller';
+	var path = '.'+'/'+'Controller';
 	console.log('load the Controller path:'+path);
 	var files = fs.readdirSync(path);
 	files.forEach(function(e,index){

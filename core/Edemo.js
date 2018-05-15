@@ -4,6 +4,8 @@ var http = require('http');
 var controller = require('../core/controller');
 var debug = require('debug')('myapp:server');
 
+var eureka = require("./Eureka");
+
 var port = process.env.PORT || 3000;
 app.set("port",port);
 
